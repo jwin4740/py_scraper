@@ -27,4 +27,4 @@ class MainDriver:
         self.options.add_argument("--disable-ipv6")
         self.options.add_argument("--allow-http-screen-capture")
         self.options.add_argument("--start-maximized")
-        self.driver = webdriver.Chrome('./chromedriver_linux')
+        self.driver = webdriver.Chrome('./chromedriver_windows')
