@@ -6,7 +6,7 @@ def start_db(host, user, passwd):
     conn = mysql.connector.connect(
         host=host,
         user=user,
-        password=passwd, database='vaers')
+        password=passwd, database='vaers_tmp')
 
     return conn
 
