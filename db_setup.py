@@ -108,11 +108,13 @@ def create_tables():
 def drop_table(table_name='reports'):
     print('dropping table')
     cursor.execute(f"DROP TABLE {table_name}")
-    cursor.close()
-    Conn.close()
 
 
 if sys.argv[1] == 'create':
     create_tables()
 elif sys.argv[1] == 'drop':
+    drop_table('vaccine')
     drop_table()
+
+    cursor.close()
+    Conn.close()
